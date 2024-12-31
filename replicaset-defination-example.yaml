@@ -7,14 +7,14 @@ metadata:
 spec:
   template:
     metadata:
-      name: myapp-pod-busybox
+      name: myapp-pod-nginx
       labels:
-        app: myapp-busybox
+        app: myapp-nginx
         type: front-end
     spec:
       containers:
-        - name: busybox-container
-          image: busybox
+        - name: nginx-container
+          image: nginx
   replicas: 4
   selector:
     matchLabels:
